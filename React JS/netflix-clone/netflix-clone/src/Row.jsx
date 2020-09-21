@@ -110,7 +110,7 @@ function Row({ title, fetchUrl, isLarge }) {
       <h2>{title}</h2>
       <div className="row_posters">
         {movies.map((movie) => (
-          <div className="movie_body">
+          <div key={movie.id} className="movie_body">
             <img
               key={movie.id}
               onClick={() => handleClick(movie)}
@@ -124,7 +124,10 @@ function Row({ title, fetchUrl, isLarge }) {
               className={`row_poster ${isLarge && "row_posterLarge"}`}
               alt={movie.name || movie.original_title || movie.original_name}
             />
-            <h4 className="movie_name">
+            <h4
+              key={movie.name || movie.original_title || movie.original_name}
+              className="movie_name"
+            >
               {movie.name || movie.original_title || movie.original_name}
             </h4>
           </div>
