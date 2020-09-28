@@ -44,7 +44,7 @@ function Post({ username, user, post_id, caption, imageUrl }) {
     <div className="post_container">
       <div className="post_head">
         <Avatar
-          alt="Remy Sharp"
+          alt={username}
           className="post_avatar"
           src="/static/images/avatar/1.jpg"
         />
@@ -52,7 +52,7 @@ function Post({ username, user, post_id, caption, imageUrl }) {
         <h4>{username}</h4>
       </div>
 
-      <img className="post_image" src={imageUrl}></img>
+      <img className="post_image"alt="..." src={imageUrl}></img>
 
       <h4 className="post_text">
         <strong>{username}&nbsp;</strong>

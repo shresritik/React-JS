@@ -24,10 +24,14 @@ const useStyles = makeStyles((theme) => ({
   paper: {
     position: "absolute",
     width: 400,
+    [theme.breakpoints.down('sm')]: {
+     width:278,
+    },
     backgroundColor: theme.palette.background.paper,
-    border: "2px solid #000",
+   
     boxShadow: theme.shadows[5],
     padding: theme.spacing(2, 4, 3),
+    outline:0,
   },
 }));
 
@@ -206,7 +210,7 @@ function App() {
       {user?.displayName ? (
         <ImageUpload username={user.displayName} />
       ) : (
-        <h2 className="error_msg">Sorry you need to log in to upload images</h2>
+        <h2 className="error_msg">You need to log in to upload images</h2>
       )}
     </div>
   );

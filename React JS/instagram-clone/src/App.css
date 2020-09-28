@@ -36,3 +36,17 @@
   align-items: center;
   flex-direction: column;
 }
+@media (max-width: 580px) {
+  .error_msg{
+    margin-top: -45px;
+    margin-right: 0px;
+    display: flex;
+    
+    flex-direction: row;
+    font-size: 18px;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    
+  }
+}

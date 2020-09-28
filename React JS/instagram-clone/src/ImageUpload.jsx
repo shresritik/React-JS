@@ -53,10 +53,11 @@ function ImageUpload({ username }) {
       <input
         type="text"
         value={caption}
+        className="caption_text"
         onChange={(e) => setCaption(e.target.value)}
-        placeholder="Enter caption"
+        placeholder="Write your caption"
       />
-      <input type="file" onChange={handleChange} />
+      <input type="file" className="upload_image" onChange={handleChange} />
       <Button onClick={handleUpload}> Upload</Button>
     </div>
   );
