@@ -38,7 +38,7 @@ function Row({ title, fetchUrl, isLarge }) {
       console.log("fetchUrl", fetchTv);
       if (!fetchTv) {
         const videoId = axios.get(
-          `http://api.themoviedb.org/3/movie/${movie.id}?api_key=3344d013003808e492b44bc4794c9bd8&append_to_response=videos`
+          `https://api.themoviedb.org/3/movie/${movie.id}?api_key=3344d013003808e492b44bc4794c9bd8&append_to_response=videos`
         );
         console.log("videoId", videoId.data);
         videoId
@@ -51,7 +51,7 @@ function Row({ title, fetchUrl, isLarge }) {
           });
       } else {
         const videoId = axios.get(
-          `http://api.themoviedb.org/3/tv/${movie.id}?api_key=3344d013003808e492b44bc4794c9bd8&append_to_response=videos`
+          `https://api.themoviedb.org/3/tv/${movie.id}?api_key=3344d013003808e492b44bc4794c9bd8&append_to_response=videos`
         );
         console.log("videoId", videoId.data);
         videoId
@@ -128,7 +128,7 @@ function Row({ title, fetchUrl, isLarge }) {
               key={movie.name || movie.original_title || movie.original_name}
               className="movie_name"
             >
-              {movie.name || movie.original_title || movie.original_name}
+              {movie.name || movie.title || movie.original_title}
             </h4>
           </div>
         ))}
