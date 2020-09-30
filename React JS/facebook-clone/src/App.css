@@ -4,3 +4,27 @@
 .app {
   background-color: #f1f2f5;
 }
+.footer {
+  margin: auto;
+  text-align: center;
+  font-weight: normal;
+  padding-bottom: 20px;
+  font-size: 0.9rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .sidebar_body {
+    display: none;
+  }
+  .widget_body {
+    display: none;
+  }
+  .footer {
+    text-align: initial;
+    /* margin-right: 25px; */
+    font-weight: normal;
+    padding-bottom: 13px;
+    font-size: 0.9rem;
+    margin-left: 146px;
+  }
+}

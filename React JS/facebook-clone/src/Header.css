@@ -1,5 +1,8 @@
-.header_left > img {
+.fb_logo {
   height: 40px;
+}
+.fb_altlogo {
+  display: none;
 }
 .header_left {
   display: flex;
@@ -70,4 +73,46 @@
 }
 .header_options--active {
   border-bottom: 4px solid #2e81f4;
+}
+@media screen and (max-width: 1200px) {
+  .header_left {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+  .header_input {
+    position: relative;
+    right: 520px;
+    top: -9px;
+  }
+  .fb_logo {
+    display: none;
+  }
+  .fb_altlogo {
+    display: flex;
+    height: 27px;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .header {
+    display: block;
+  }
+  .header_right {
+    display: none;
+  }
+  .header_center {
+    justify-content: end;
+  }
+  .header_options {
+    display: flex;
+    width: 4%;
+    justify-content: left;
+    align-items: left;
+    padding: 0 39px;
+    padding: 0 27px;
+    cursor: pointer;
+    margin-left: 13px;
+    margin-left: -1px;
+    margin-top: 3px;
+  }
 }

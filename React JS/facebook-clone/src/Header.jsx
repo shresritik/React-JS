@@ -26,7 +26,13 @@ function Header() {
     <div className="header">
       <div className="header_left">
         <img
+          className="fb_logo"
           src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg"
+          alt="Facebook"
+        />
+        <img
+          className="fb_altlogo"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Facebook_Logo_%282019%29.svg/800px-Facebook_Logo_%282019%29.svg.png"
           alt="Facebook"
         />
         <div className="header_input">

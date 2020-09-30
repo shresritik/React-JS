@@ -6,3 +6,14 @@
   padding: 30px 19px;
   /* padding: 30px 150px; */
 }
+@media screen and (max-width: 1200px) {
+  .feed {
+    display: block;
+    width: 77%;
+    /* flex: 1 1; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    padding: 11px 2px;
+  }
+}

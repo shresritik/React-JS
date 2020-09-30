@@ -15,13 +15,23 @@ function App() {
         <Login />
       ) : (
         <>
-          <Header />
+          <div className="header_body">
+            <Header />
+          </div>
 
           <div className="app_body">
-            <Sidebar />
-            <Feed />
-            <Widget />
+            <div className="sidebar_body">
+              <Sidebar />
+            </div>
+            <div className="feed_body">
+              <Feed />
+            </div>
+
+            <div className="widget_body">
+              <Widget />
+            </div>
           </div>
+          <h4 className="footer">Developed by Ritik Krishna Shrestha</h4>
         </>
       )}
     </div>
