@@ -49,3 +49,32 @@
 .messenger_input {
   flex: 1;
 }
+@media screen and (max-width:1200px){
+  .messenger_options{
+    padding: 4px;
+  }
+  /* .messenger_top{
+    padding: 4px;
+  } */
+  .messenger_top > form > input {
+  outline-width: 0;
+    border: none;
+    padding: 12px;
+    /* padding: 5px 20px; */
+    margin: 0 10px;
+    border-radius: 999px;
+    background-color: #eff2f5;}
+    .messenger_options{
+      padding: 0px;
+    }
+    .messenger_top form input.messenger_input{
+margin-left: 4px;
+
+    }
+    .messenger_top form input.imageUrl{
+    margin-left: -6px;
+   width:19%;
+    padding: 10px;
+    }
+
+}

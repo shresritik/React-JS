@@ -9,6 +9,8 @@ import firebase from "firebase";
 
 import { useStateValue } from "./StateProvider";
 function MessengerSender() {
+
+  
   const [{ user }, dispatch] = useStateValue();
 
   const [input, setInput] = useState("");
@@ -25,6 +27,10 @@ function MessengerSender() {
     setInput("");
     setURL("");
   };
+  const userName = document.getElementsByClassName("userName");
+
+  var array = user.displayName.split(" ")[0];
+  userName.innerText = array;
   return (
     <div className="messengerSender">
       <div className="messenger_top">
@@ -33,13 +39,14 @@ function MessengerSender() {
           <input
             type="text"
             className="messenger_input"
-            placeholder={`What's on your mind, ${user.displayName}`}
+            placeholder={`What's on your mind, ${array}`}
             value={input}
             onChange={(e) => setInput(e.target.value)}
           />
           <input
             type="text"
             placeholder="Image URL (Optional)"
+            className="imageUrl"
             value={URL}
             onChange={(e) => setURL(e.target.value)}
           />

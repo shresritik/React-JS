@@ -1,4 +1,8 @@
 .sidebar {
-  flex: 0.33px;
+  /* flex: 0.33px;
+  padding: 25px 10px; */
+  display: block;
+  width: 180%;
+  flex: 8.33px 9;
   padding: 25px 10px;
 }

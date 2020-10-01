@@ -24,3 +24,11 @@
   left: 25px;
   color: white;
 }
+@media screen and (max-width:1200px){
+  .story:last-child{
+    display: none;
+  }
+.story{
+  margin-right: 4px;
+}
+}

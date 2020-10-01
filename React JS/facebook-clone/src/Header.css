@@ -74,17 +74,13 @@
 .header_options--active {
   border-bottom: 4px solid #2e81f4;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 700px) {
   .header_left {
     display: flex;
     justify-content: space-between;
     position: relative;
   }
-  .header_input {
-    position: relative;
-    right: 520px;
-    top: -9px;
-  }
+ 
   .fb_logo {
     display: none;
   }
@@ -93,26 +89,71 @@
     height: 27px;
     align-items: center;
     justify-content: space-evenly;
+    position: absolute;
+    left: 55px;
   }
   .header {
     display: block;
+    width: 138%;
+    overflow-x: hidden;
   }
   .header_right {
     display: none;
   }
   .header_center {
-    justify-content: end;
+    justify-content: center;
   }
   .header_options {
     display: flex;
-    width: 4%;
+    /* width: 5%; */
     justify-content: left;
     align-items: left;
-    padding: 0 39px;
-    padding: 0 27px;
+    /* padding: 0 39px; */
+    padding: 0px 25px;
     cursor: pointer;
-    margin-left: 13px;
-    margin-left: -1px;
+    /* margin-left: 13px; */
+    margin-left: -6px;
     margin-top: 3px;
+    position: relative;
+    left: 21px;
+  }
+  .header_input{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    background-color: #eff2f5;
+    padding: 10px;
+    margin-left: 10px;
+    border-radius: 33px;
+    position: relative;
+    right: -246px;
+    top: -7px;
   }
 }
+
+/* @media screen and (max-height:500px){
+.header_options{
+display: flex;
+    
+    align-items: left;
+    padding: 0px 39px;
+    cursor: pointer;
+    margin-left: 13px;
+    margin-left: -21px;
+    margin-top: 3px;
+    position: relative;
+    left: 8px;}
+    .header{
+      width:94%;
+    }
+  .header_input{
+    display: flex;
+    justify-content: space-between;
+    background-color: #eff2f5;
+    padding: 10px;
+    margin-left: 10px;
+    border-radius: 33px;
+    position: relative;
+    right: -303px;
+    top: -7px;
+  }} */
