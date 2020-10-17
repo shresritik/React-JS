@@ -1,0 +1,40 @@
+.home {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(234, 237, 237);
+
+  /* max-width: 1200px; */
+}
+.home_img {
+  width: 100% !important;
+  z-index: -1 !important;
+  margin-bottom: -150px !important;
+  mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1),
+    rgba(0, 0, 0, 0)
+  ) !important;
+  overflow: visible !important;
+}
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: inherit !important;
+}
+.home_row {
+  display: flex;
+  z-index: 1;
+  /* margin-left: 5px; */
+  margin-right: 6px;
+}
+@media (max-width: 750px) {
+  .home_row {
+    display: flex;
+    flex-direction: column;
+  }
+  .home_img {
+    margin-bottom: 0 !important;
+  }
+}
