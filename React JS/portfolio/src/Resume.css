@@ -1,0 +1,102 @@
+.resume {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  align-items: center;
+  margin: auto;
+  padding: 60px;
+  background-color: rgb(224, 224, 224);
+  height: max-content;
+}
+.resume_row {
+  display: inline;
+  width: 50%;
+  margin: auto;
+  border-bottom: 2px solid lightgray;
+  clear: right;
+  padding: 29px;
+}
+.skill {
+  border-bottom: none;
+}
+.resume_row > h4 {
+  float: left;
+  font-weight: 700;
+  border-bottom: 2px solid rgb(10, 112, 214);
+  padding-bottom: 10px;
+  height: max-content;
+  width: max-content;
+  text-align: left;
+  clear: right;
+  margin: auto;
+}
+.resume_right {
+  /* padding: 29px; */
+
+  flex: 1;
+  float: right;
+  margin: auto;
+  width: 50%;
+  z-index: 1020;
+  text-align: left;
+}
+.resume_right > p {
+  color: gray;
+  font-size: large;
+  clear: both;
+}
+.progress_skills {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+}
+.resume_skill {
+  margin-bottom: 10px;
+}
+.resume_skill > img {
+  /* display: inline-block; */
+  display: flex;
+  flex-direction: column;
+  float: left;
+  justify-content: center;
+  /* width: max-content; */
+  margin: auto;
+  margin-right: 23px;
+  align-items: center;
+  object-fit: contain;
+  height: 50px;
+}
+.resume_skill > .progress {
+  display: block;
+  float: right;
+}
+.photo_resize {
+  height: 45px !important;
+}
+.img_increase {
+  height: 55px !important;
+  margin: auto;
+  position: relative;
+
+  margin-left: 5px;
+  right: 0px !important;
+}
+
+.img_resize {
+  position: relative;
+
+  right: -3px;
+}
+/* h5 {
+  float: left;
+  clear: both;
+  text-align: center;
+} */
+/* .resume_skillLeft {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+} */

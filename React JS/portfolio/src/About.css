@@ -1,0 +1,50 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(26, 26, 26);
+  color: white;
+  padding: 60px;
+  align-items: center;
+}
+.about_me,
+.about_contact {
+  width: 60%;
+}
+.about_resume {
+  display: flex;
+}
+
+.about_resume > button {
+  flex-shrink: 0;
+  display: flex;
+  background-color: #3b3b3b;
+  border: 2px solid white;
+  font-weight: bold;
+  /* width: 100%; */
+  padding: 13px;
+  height: max-content;
+  color: white;
+  border-radius: 5px;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  justify-content: center;
+  outline: none;
+}
+.about_resume > button:hover {
+  background-color: white;
+  color: #444444;
+  border: none;
+
+  outline: none;
+}
+p {
+  color: rgb(197, 197, 197);
+  font-size: 1rem;
+  margin-bottom: 50px;
+}
+h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  line-height: 5px;
+}
