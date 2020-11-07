@@ -1,17 +1,16 @@
-import React, { useEffect } from "react";
-// import { Link } from "react-router-dom";
-import "./Graphic.css";
+import React from "react";
+import "./Website.css";
+// import "./Graphic.css";
 import cert from "./img/graphic/certificate of blood donation 2.jpg";
 import daily from "./img/graphic/daily-essentials.png";
 import store from "./img/graphic/dashain_leostore.png";
 import untitled from "./img/graphic/rsz_1rsz_untitled-1_-_copy.jpg";
 import product from "./img/graphic/get_your_product_2.png";
 import Modals from "./Modals";
+import { Button, Modal } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import Aos from "aos";
-import "aos/dist/aos.css";
 
-function Graphic() {
+function GraphicsPage() {
   const [modalShow, setModalShow] = React.useState(false);
   const [selectedImg, setSelectedImg] = React.useState(null);
   const [selectedProd, setSelectedProd] = React.useState(null);
@@ -22,20 +21,16 @@ function Graphic() {
     { id: 4, img: untitled, prodName: "Fellowship of Leo Club" },
     { id: 5, img: product, prodName: "Product Ad for online store" },
   ];
-  useEffect(() => {
-    Aos.init({ duration: 1000 });
-  }, []);
-  return (
-    <div className="work" data-aos="fade-down">
-      <div className="work_graphics">
-        <div className="work_header">
-          <h4>Graphics Design</h4>
 
-          <Link to="/graphics">Explore More</Link>
-        </div>
-        <div className="work_section">
+  return (
+    <div className="work website">
+      <div className="work_graphics website">
+        <Link to="/">
+          <i class="fas fa-arrow-circle-left"></i>
+        </Link>
+        <div className="website_section">
           {prod.map?.((item) => (
-            <div key={item.id} className="work_img">
+            <div key={item.id} className="work_img web_img">
               <img
                 src={item.img}
                 onClick={() => {
@@ -65,4 +60,4 @@ function Graphic() {
   );
 }
 
-export default Graphic;
+export default GraphicsPage;

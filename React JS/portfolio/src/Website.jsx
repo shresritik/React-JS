@@ -1,5 +1,5 @@
-import React, { useEffect } from "react";
-// import "./Web.css";
+import React from "react";
+import "./Website.css";
 import amazon from "./img/Web/amazon.JPG";
 import netflix from "./img/Web/netflix.JPG";
 import facebook from "./img/Web/facebook.JPG";
@@ -7,14 +7,10 @@ import messenger from "./img/Web/MessengerLite.jpg";
 import whatsapp from "./img/Web/whatsapp.JPG";
 import instagram from "./img/Web/instagram.JPG";
 import Modals from "./Modals";
+import { Button, Modal } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
-import Aos from "aos";
-import "aos/dist/aos.css";
-function Web() {
-  useEffect(() => {
-    Aos.init({ duration: 1000 });
-  }, []);
+function Website() {
   const [modalShow, setModalShow] = React.useState(false);
   const [selectedImg, setSelectedImg] = React.useState(null);
   const [selectedProd, setSelectedProd] = React.useState(null);
@@ -72,16 +68,14 @@ function Web() {
   ];
 
   return (
-    <div className="work" data-aos="fade-up">
-      <div className="work_graphics">
-        <div className="work_header">
-          <h4>Websites</h4>
-
-          <Link to="/website">Explore More</Link>
-        </div>
-        <div className="work_section">
+    <div className="work website">
+      <div className="work_graphics website">
+        <Link to="/">
+          <i class="fas fa-arrow-circle-left"></i>
+        </Link>
+        <div className="website_section">
           {prod.map?.((item) => (
-            <div key={item.id} className="work_img">
+            <div key={item.id} className="work_img web_img">
               <img
                 src={item.img}
                 onClick={() => {
@@ -115,4 +109,4 @@ function Web() {
   );
 }
 
-export default Web;
+export default Website;

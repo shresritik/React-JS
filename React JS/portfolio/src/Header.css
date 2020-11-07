@@ -10,8 +10,8 @@
 }
 
 .nav_header {
-  /* position: sticky;
-  position: -webkit-sticky; */
+  position: fixed;
+  position: -webkit-sticky;
   top: 0;
   display: flex;
   /* width: max-content; */
@@ -43,7 +43,8 @@
   align-items: center;
   text-align: center;
   justify-content: center;
-  margin-top: 200px;
+  /* margin-top: 200px; */
+  height: 100vh;
 }
 .header_info > h1 {
   font-size: 4rem;
@@ -71,23 +72,50 @@
   margin-left: 0px !important;
   margin-right: 0px !important;
 }
+.header_nav {
+  /* background-color: black;
+  width: 100%;
+  height: 60px;
+  margin: auto; */
+}
+
 @media (min-width: 992px) {
   .navbar-expand-lg .navbar-nav .nav-link {
     padding-right: 1.5rem !important;
     padding-left: 1.5rem !important;
   }
 }
-.header_background {
+.header_nav {
   /* transition: background-color 0.9s; */
 
-  background-color: #302c2c;
+  /* background-color: #302c2c; */
+  /* background-color: black; */
+  width: 100%;
+  height: 60px;
+  margin: auto;
 }
 .header_backgroundNone {
   /* transition: visibility 4s; */
-  visibility: hidden;
+  display: none;
+  /* visibility: hidden; */
 }
 .fixed-top {
   display: fixed;
   left: initial !important;
   right: initial !important;
+}
+
+a {
+  text-decoration: none;
+}
+.icons > a > .fab {
+  margin: 0 10px 15px 10px;
+  font-size: 2.5rem;
+  color: white;
+  transition: color 0.3s;
+
+  /* background-color: white !important; */
+}
+.icons > a > .fab:hover {
+  color: rgb(54, 54, 54);
 }

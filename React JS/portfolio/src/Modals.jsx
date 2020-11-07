@@ -20,7 +20,15 @@ function Modals(props) {
         <img src={props.img} className="img-fluid" />
       </Modal.Body>
       <Modal.Footer>
+        {props?.para && <h5>{props?.para}</h5>}
         <button onClick={props.onHide}>Close</button>
+        {props?.link && (
+          <button>
+            <a href={props?.link} target="_blank">
+              Visit Website
+            </a>
+          </button>
+        )}
       </Modal.Footer>
     </Modal>
     // <img src={props.img} className="img-fluid" />

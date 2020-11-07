@@ -9,5 +9,18 @@
   opacity: 1;
 }
 button {
-  outline: none;
+  color: #1a1a1a;
+  outline: none !important;
+}
+.modal-footer {
+  justify-content: space-between;
+}
+button > a {
+  text-decoration: none !important;
+  color: white;
+  font-weight: 700;
+}
+button > a:hover {
+  text-decoration: none !important;
+  color: #1a1a1a;
 }

@@ -1,29 +1,43 @@
 import React from "react";
 import "./About.css";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 function About() {
-  return (
-    <div id="about" className="about">
-      <div className="about_me">
-        <h2>About Me</h2>
-        <div className="about_resume">
-          <p>
-            Use this bio section as your way of describing yourself and saying
-            what you do, what technologies you like to use or feel most
-            comfortable with, describing your personality, or whatever else you
-            feel like throwing in.
-          </p>
-          <button type="button">Download my CV</button>
-        </div>
-      </div>
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
 
-      <div className="about_contact">
-        <div className="about_contactMe">
-          <h2> Contact Details </h2>
-          <p>
-            Tim Baker (Your Street) (Your City) (Your State), (Your Zip/Postal
-            Code) 555-555-5555 youremailhere@gmail.com{" "}
-          </p>
+  const style = {
+    paddingTop: "74px",
+    paddingBottom: "74px",
+  };
+  return (
+    <div id="about">
+      <div className="about" style={style} data-aos="fade-down">
+        <div className="about_me">
+          <h2>About Me</h2>
+          <div className="about_resume">
+            <p>
+              In my free time, I like to watch movies, listen to music and play
+              guitar. But whenever I am using Internet, I watch web development
+              or graphic designs tutorials and inspirational portfolio which
+              encourages me to develop one.
+            </p>
+            <button type="button">Download my CV</button>
+          </div>
+        </div>
+
+        <div className="about_contact">
+          <div className="about_contactMe">
+            <h2> Contact Details </h2>
+            <p>
+              Location: Lalitpur, Nepal
+              <br />
+              Email Id: shrestharitik@gmail.com
+            </p>
+          </div>
         </div>
       </div>
     </div>

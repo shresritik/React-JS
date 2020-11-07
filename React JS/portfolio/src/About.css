@@ -3,7 +3,7 @@
   flex-direction: column;
   background-color: rgb(26, 26, 26);
   color: white;
-  padding: 60px;
+  /* padding-top: 80px; */
   align-items: center;
 }
 .about_me,
@@ -12,12 +12,13 @@
 }
 .about_resume {
   display: flex;
+  justify-content: space-between;
 }
 
 .about_resume > button {
   flex-shrink: 0;
   display: flex;
-  background-color: #3b3b3b;
+  background-color: #1a1a1a;
   border: 2px solid white;
   font-weight: bold;
   /* width: 100%; */
@@ -28,7 +29,7 @@
   align-items: center;
   text-align: center;
   margin: auto;
-  justify-content: center;
+  /* justify-content: center; */
   outline: none;
 }
 .about_resume > button:hover {
@@ -47,4 +48,24 @@ h2 {
   font-size: 2rem;
   margin-bottom: 30px;
   line-height: 5px;
+}
+@media screen and (max-width: 900px) {
+  .about_resume {
+    display: block;
+  }
+  .about_resume > p {
+    margin-bottom: 10px;
+  }
+  .about_resume > button {
+    /* margin: 0px; */
+  }
+  p {
+    margin-bottom: 20px;
+  }
+  h2 {
+    line-height: 0px;
+    margin-bottom: 10px;
+    line-height: 0px;
+    width: max-content;
+  }
 }

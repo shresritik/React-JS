@@ -1,38 +1,57 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Progress from "./Progress";
 import "./Resume.css";
 import png from "./img/pngegg.png";
 import python from "./img/python.png";
 import css from "./img/css.png";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 function Resume() {
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
+
+  const style = {
+    paddingTop: "74px",
+    paddingBottom: "74px",
+  };
   return (
-    <div id="resume" className="resume">
-      <div className="resume_row">
+    <div id="resume" className="resume" data-aos="fade-top ">
+      <div className="resume_row" data-aos="flip-left">
         <h4>EDUCATION</h4>
         <div className="resume_right">
-          <h4>Sagarmatha Engineering College</h4>
-          <p> Bachelor in Electronics, Communication & Inforamtion</p>
+          <h4>Sagarmatha Engineering College (2020)</h4>
+          <p> Bachelors in Electronics, Communication & Inforamtion</p>
+          <h4>Prasadi Academy Higher Secondary School (2016 - 2018)</h4>
+          <p> 10+2 Science Faculty</p>
+          <h4>Graded English Medium School (2006 - 2016)</h4>
+          <p> Primary-Secondary Level</p>
         </div>
       </div>
 
-      <div className="resume_row">
+      <div className="resume_row" data-aos="flip-left">
         <h4>Work</h4>
         <div className="resume_right">
-          <h4>Sagarmatha Engineering College</h4>
-          <p> Bachelor in Electronics, Communication & Inforamtion</p>
+          <h4>ChildSafeNet (2018)</h4>
+          <p> Graphics Designer</p>
+          <h4>Unicampus Consultancy (2017 - 2018)</h4>
+          <p> Junior Assistant Graphics Designer</p>
         </div>
       </div>
 
-      <div className="resume_row skill">
+      <div className="resume_row skill" data-aos="flip-left">
         <h4>Skills</h4>
 
         <div className="resume_right">
-          <h4>Sagarmatha Engineering College</h4>
-          <p> Bachelor in Electronics, Communication & Inforamtion</p>
+          <h4>Self-taught Programmer & Graphics Designer</h4>
+          <p>
+            I owned my skills from online tutorials like Udemy, Coursera and
+            YouTube
+          </p>
         </div>
       </div>
-      <div className="progress_skills">
+      <div className="progress_skills" data-aos="fade-up">
         <div className="resume_skill">
           <img src={python} alt="python" />
           {/* <h5>Python</h5> */}

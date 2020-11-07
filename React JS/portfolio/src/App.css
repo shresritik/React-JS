@@ -2,9 +2,13 @@ body {
   font-family: "Calibri", "Franklin Gothic Medium", "Arial Narrow", Arial,
     sans-serif;
 }
+
 /* #home,
 #contact,
 #resume,
 #about {
   transition: all 2s ease;
 } */
+a {
+  text-decoration: none;
+}

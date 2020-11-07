@@ -14,9 +14,10 @@
   padding: 20px;
   display: flex;
   /* align-items: center; */
-  background-color: rgb(233, 233, 233);
+  background-color: rgb(224, 224, 224);
   text-align: center;
-  overflow: hidden;
+  overflow: scroll;
+  margin-top: 18px;
 }
 .work_img {
   padding-left: 10px;
@@ -29,6 +30,8 @@
   padding-right: 10px;
   padding-left: 10px;
   border-radius: 10px;
+  border-color: #303030;
+  border-style: solid;
   box-shadow: -1px 5px 15px 0px rgba(0, 0, 0, 0.44);
   /* border-color: black; */
   /* border: 1px solid rgb(54, 54, 54); */
@@ -43,4 +46,13 @@
 }
 .work_img > h6 {
   margin-top: 10px;
+}
+.work_header > a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+.work_header > a:hover {
+  text-decoration: none;
+  color: orange;
 }

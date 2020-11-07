@@ -1,0 +1,36 @@
+.footer {
+  background-color: #0f0f0f;
+  padding: 30px;
+  text-align: center;
+  color: darkgrey;
+  position: relative;
+}
+.icon a .fab {
+  font-size: 2rem;
+  margin: 0 10px 15px 10px;
+  margin-top: -80px;
+
+  color: grey;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.icon a .fab:hover {
+  color: rgb(255, 255, 255);
+}
+.footer > .fas {
+  color: white;
+  position: relative;
+  font-size: 3.2rem;
+  top: -50px;
+  right: 8px;
+  /* left: 682px; */
+}
+.footer > .fas:hover {
+  cursor: pointer;
+  color: grey;
+}
+/* @media screen and (max-width: 700px) {
+  .footer > .fas {
+    display: none;
+  }
+} */
