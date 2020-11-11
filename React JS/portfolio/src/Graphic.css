@@ -4,6 +4,7 @@
   padding-top: 20px;
   padding-left: 40px;
   padding-right: 40px;
+  padding-right: 40px;
   align-items: center;
   /* justify-content: center; */
   padding-bottom: 20px;
@@ -16,7 +17,7 @@
   /* align-items: center; */
   background-color: rgb(224, 224, 224);
   text-align: center;
-  overflow: scroll;
+  overflow: auto;
   margin-top: 18px;
 }
 .work_img {
@@ -27,8 +28,8 @@
   object-fit: cover;
   height: 100px;
   width: 200px;
-  padding-right: 10px;
-  padding-left: 10px;
+  /* padding-right: 10px;
+  padding-left: 10px; */
   border-radius: 10px;
   border-color: #303030;
   border-style: solid;
@@ -51,8 +52,19 @@
   text-decoration: none;
   color: white;
   font-weight: 500;
+  margin-bottom: 8px;
 }
 .work_header > a:hover {
   text-decoration: none;
   color: orange;
+}
+@media screen and (max-width: 700px) {
+  .work_header > h4,
+  a {
+    font-size: 1.1rem;
+  }
+  .work_header {
+    padding-left: 19px;
+    padding-right: 19px;
+  }
 }

@@ -29,6 +29,7 @@
   text-align: left;
   clear: right;
   margin: auto;
+  color: black;
 }
 .resume_right {
   /* padding: 29px; */
@@ -40,8 +41,11 @@
   z-index: 1020;
   text-align: left;
 }
+.resume_right > h4 {
+  color: black;
+}
 .resume_right > p {
-  color: gray;
+  color: rgb(59, 59, 59);
   font-size: large;
   clear: both;
 }
@@ -54,7 +58,7 @@
 .resume_skill {
   margin-bottom: 10px;
 }
-.resume_skill > img {
+.resume_skill > .resume_skillLeft > img {
   /* display: inline-block; */
   display: flex;
   flex-direction: column;
@@ -67,7 +71,7 @@
   object-fit: contain;
   height: 50px;
 }
-.resume_skill > .progress {
+.resume_skill > .resume_progress > .progress {
   display: block;
   float: right;
 }
@@ -93,10 +97,78 @@
   clear: both;
   text-align: center;
 } */
-/* .resume_skillLeft {
+.resume_skillLeft {
   display: flex;
   flex-direction: column;
   flex: 1;
   align-items: center;
+  margin: auto;
   justify-content: center;
-} */
+  float: left;
+  width: 54px;
+  margin-right: 50px;
+}
+.resume_skillLeft > h5 {
+  padding: 5px;
+  text-align: center;
+}
+.resume_progress {
+  float: right;
+}
+.resume_skillLeft > .django {
+  margin-left: 20px !important;
+}
+@media screen and (max-width: 900px) {
+  .resume {
+    width: 100%;
+    padding: 0;
+  }
+  .resume_row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .resume_row > h4 {
+    float: none;
+    font-weight: 700;
+    border-bottom: 2px solid rgb(10, 112, 214);
+    padding-bottom: 10px;
+    height: max-content;
+    width: max-content;
+    text-align: left;
+    clear: right;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  .resume_right > h4 {
+    font-size: 1.3rem;
+  }
+  .resume_right {
+    /* padding: 29px; */
+    flex: 1;
+    float: none;
+    margin: auto;
+    width: 100%;
+    z-index: 1020;
+    text-align: left;
+  }
+  .resume_skillLeft {
+    display: flex;
+    flex-direction: row;
+    /* flex: 1 1; */
+    align-items: center;
+    margin: 0;
+    justify-content: initial;
+    float: none;
+    width: 54px;
+    margin-right: 50px;
+  }
+  .resume_skillLeft > h5 {
+    text-align: left;
+  }
+  .resume_skillLeft > .django {
+    margin-left: 0px !important;
+  }
+}

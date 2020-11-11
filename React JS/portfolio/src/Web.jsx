@@ -83,6 +83,7 @@ function Web() {
           {prod.map?.((item) => (
             <div key={item.id} className="work_img">
               <img
+                alt=""
                 src={item.img}
                 onClick={() => {
                   setSelectedImg(item.img);

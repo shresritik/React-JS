@@ -13,7 +13,7 @@ const Progress = ({ done }) => {
 
       setStyle(newStyle);
     }, 200);
-  }, []);
+  }, [done]);
 
   return (
     <div className="progress">

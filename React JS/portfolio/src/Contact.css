@@ -70,14 +70,24 @@ form > div {
   margin-bottom: 23px;
 }
 @media screen and (max-width: 900px) {
+  .contact > form {
+    margin-right: 20px;
+  }
   input,
   textarea {
+    width: 100%;
+  }
+  .contact > form {
+    align-items: inherit;
+    width: 100%;
+  }
+  form > div {
     width: 100%;
   }
 }
 @media screen and (max-width: 500px) {
   .contact {
-    padding: 0px;
+    padding: 20px;
     padding-bottom: 20px;
   }
 }

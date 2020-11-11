@@ -1,9 +1,8 @@
 import React from "react";
-import { Button, Modal } from "react-bootstrap";
+import { Modal } from "react-bootstrap";
 import "./Modals.css";
 
 function Modals(props) {
-  console.log("img", props.img);
   return (
     <Modal
       {...props}
@@ -11,25 +10,49 @@ function Modals(props) {
       aria-labelledby="contained-modal-title-vcenter"
       centered
     >
-      <Modal.Header closeButton>
-        <Modal.Title id="contained-modal-title-vcenter example-custom-modal-styling-title">
-          {props.prodname}
-        </Modal.Title>
-      </Modal.Header>
+      {props?.link && (
+        <Modal.Header closeButton>
+          <Modal.Title id="contained-modal-title-vcenter example-custom-modal-styling-title">
+            {props.prodname}
+          </Modal.Title>
+        </Modal.Header>
+      )}
+
       <Modal.Body>
-        <img src={props.img} className="img-fluid" />
-      </Modal.Body>
-      <Modal.Footer>
-        {props?.para && <h5>{props?.para}</h5>}
-        <button onClick={props.onHide}>Close</button>
-        {props?.link && (
-          <button>
-            <a href={props?.link} target="_blank">
-              Visit Website
-            </a>
+        {!props?.link ? (
+          <button className="button" onClick={props.onHide}>
+            X
           </button>
+        ) : (
+          "Hello"
         )}
-      </Modal.Footer>
+        <img
+          alt=""
+          src={props.img}
+          className="img-fluid"
+          style={
+            !props?.link
+              ? {
+                  objectFit: "contain",
+                  height: "100vh",
+                  overflowY: "hidden",
+                }
+              : {}
+          }
+        />
+      </Modal.Body>
+      {props?.link && (
+        <Modal.Footer>
+          {props?.para && <h5>{props?.para}</h5>}
+          {props?.link && <button onClick={props.onHide}>Close</button>}
+          <a href={props?.link} rel="noreferrer" target="_blank">
+            <button>
+              {" "}
+              <h6>Visit Website </h6>
+            </button>
+          </a>{" "}
+        </Modal.Footer>
+      )}
     </Modal>
     // <img src={props.img} className="img-fluid" />
   );

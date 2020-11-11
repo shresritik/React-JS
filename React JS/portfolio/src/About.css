@@ -1,27 +1,42 @@
 .about {
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
   background-color: rgb(26, 26, 26);
   color: white;
-  /* padding-top: 80px; */
   align-items: center;
+  /* justify-content: space-between; */
 }
-.about_me,
+/* .about_me,
+.about_section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+} */
+/* .about_me,
 .about_contact {
   width: 60%;
+  margin-left: 20px;
+} */
+.about_header {
+  padding: 20px;
+
+  width: 50%;
 }
 .about_resume {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
-
-.about_resume > button {
+a:hover {
+  text-decoration: none;
+}
+.about_resume > a > button {
   flex-shrink: 0;
   display: flex;
   background-color: #1a1a1a;
   border: 2px solid white;
   font-weight: bold;
-  /* width: 100%; */
   padding: 13px;
   height: max-content;
   color: white;
@@ -29,10 +44,12 @@
   align-items: center;
   text-align: center;
   margin: auto;
-  /* justify-content: center; */
   outline: none;
+  clear: both;
+  float: none;
+  margin-right: 30px;
 }
-.about_resume > button:hover {
+.about_resume > a > button:hover {
   background-color: white;
   color: #444444;
   border: none;
@@ -47,25 +64,48 @@ p {
 h2 {
   font-size: 2rem;
   margin-bottom: 30px;
-  line-height: 5px;
+  /* line-height: 5px; */
 }
-@media screen and (max-width: 900px) {
-  .about_resume {
-    display: block;
+.about_photo {
+  width: 30%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: 30px;
+}
+.about_photo > img {
+  object-fit: contain;
+  height: 300px;
+  border-radius: 250px;
+  border: 10px solid white;
+}
+@media screen and (min-width: 750px) and (max-width: 900px) {
+  .about_photo {
+    width: 61%;
   }
-  .about_resume > p {
-    margin-bottom: 10px;
+  .about_resume > a > button {
+    margin-right: 20px;
   }
-  .about_resume > button {
-    /* margin: 0px; */
+}
+@media screen and (max-width: 751px) {
+  .about_resume,
+  .about_photo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
   }
-  p {
-    margin-bottom: 20px;
+  .about_header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    text-align: center;
+    width: 100%;
+    padding: 20px;
   }
-  h2 {
-    line-height: 0px;
-    margin-bottom: 10px;
-    line-height: 0px;
-    width: max-content;
+  .about_resume > a > button {
+    margin-right: 0px;
   }
 }

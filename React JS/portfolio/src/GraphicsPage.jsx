@@ -6,8 +6,11 @@ import daily from "./img/graphic/daily-essentials.png";
 import store from "./img/graphic/dashain_leostore.png";
 import untitled from "./img/graphic/rsz_1rsz_untitled-1_-_copy.jpg";
 import product from "./img/graphic/get_your_product_2.png";
+import bored from "./img/graphic/bored.png";
+import byol2 from "./img/graphic/byol2.jpeg";
+import byol from "./img/graphic/byol.jpeg";
+import coke from "./img/graphic/Coca-cola.jpg";
 import Modals from "./Modals";
-import { Button, Modal } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 function GraphicsPage() {
@@ -20,6 +23,10 @@ function GraphicsPage() {
     { id: 3, img: store, prodName: "Daily essentials for Online Store" },
     { id: 4, img: untitled, prodName: "Fellowship of Leo Club" },
     { id: 5, img: product, prodName: "Product Ad for online store" },
+    { id: 6, img: bored, prodName: "Leisure Time" },
+    { id: 8, img: byol, prodName: "Design Challenge" },
+    { id: 7, img: byol2, prodName: "Design Challenge 1" },
+    { id: 9, img: coke, prodName: "Coke Banner Design" },
   ];
 
   return (
@@ -32,6 +39,7 @@ function GraphicsPage() {
           {prod.map?.((item) => (
             <div key={item.id} className="work_img web_img">
               <img
+                alt=""
                 src={item.img}
                 onClick={() => {
                   setSelectedImg(item.img);

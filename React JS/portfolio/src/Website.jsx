@@ -6,8 +6,8 @@ import facebook from "./img/Web/facebook.JPG";
 import messenger from "./img/Web/MessengerLite.jpg";
 import whatsapp from "./img/Web/whatsapp.JPG";
 import instagram from "./img/Web/instagram.JPG";
+import notes from "./img/Web/notes_taker.JPG";
 import Modals from "./Modals";
-import { Button, Modal } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 function Website() {
@@ -65,6 +65,14 @@ function Website() {
       para:
         "This is desktop mode Instagram Clone made with React JS and and hosted on Firebase. It uses real-time database. So,the posts can be updated on real time.",
     },
+    {
+      id: 7,
+      img: notes,
+      prodName: "Notes Taker",
+      link: "https://shresritik.github.io/JS-practice/Notes%20Taker/",
+      para:
+        "This is a Note Taker website where you can take your personal notes. This is made using HTML, CSS and JS",
+    },
   ];
 
   return (
@@ -77,6 +85,7 @@ function Website() {
           {prod.map?.((item) => (
             <div key={item.id} className="work_img web_img">
               <img
+                alt=""
                 src={item.img}
                 onClick={() => {
                   setSelectedImg(item.img);

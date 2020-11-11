@@ -14,20 +14,33 @@ function Footer() {
         onClick={() => scroll.scrollToTop()}
       ></i>
       <div className="icon">
-        <a href="https://www.facebook.com/ritik.shrestha.73/" target="_blank">
+        <a
+          href="https://www.facebook.com/ritik.shrestha.73/"
+          rel="noreferrer"
+          target="_blank"
+        >
           {" "}
           <i className="fab fa-facebook"></i>
         </a>
-        <a href="https://www.instagram.com/shresritik/" target="_blank">
+        <a
+          href="https://www.instagram.com/shresritik/"
+          rel="noreferrer"
+          target="_blank"
+        >
           {" "}
           <i className="fab fa-instagram"></i>
         </a>
-        <a href="https://github.com/shresritik/" target="_blank">
+        <a
+          href="https://github.com/shresritik/"
+          rel="noreferrer"
+          target="_blank"
+        >
           {" "}
           <i className="fab fa-github"></i>
         </a>
         <a
           href="https://www.linkedin.com/in/ritik-shrestha-b17a4616a/"
+          rel="noreferrer"
           target="_blank"
         >
           {" "}

@@ -7,9 +7,19 @@ import { Link } from "react-scroll";
 function HeaderNav() {
   const [show, handleShow] = useState(false);
   const [view, handleView] = useState(false);
-  console.log(window.scrollY);
+
+  var btns = document.getElementsByClassName("nav-link");
+
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function () {
+      var current = document.getElementsByClassName("active");
+      current[0].className = current[0].className.replace(" active", "");
+      this.className += " active";
+    });
+  }
+
   window.addEventListener("scroll", () => {
-    if (window.scrollY == 0 || window.scrollY <= 50) {
+    if (window.scrollY === 0 || window.scrollY <= 50) {
       if (document.querySelector(".header_nav")) {
         document.querySelector(".header_nav").style.backgroundColor =
           "transparent";
@@ -72,29 +82,54 @@ function HeaderNav() {
           show && `header_backgroundNone header_nav`
         }  ${view && `header_background header_nav`}`}
       >
-        <Navbar
-          // fixed="top"
-          className={`nav_header mx-auto  `}
-          variant="dark"
-          expand="lg"
-        >
+        <Navbar className={`nav_header mx-auto  `} variant="dark" expand="lg">
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
-              <Link to="home" smooth={true} duation={500}>
-                <Nav.Link href="#">Home</Nav.Link>
+              <Link
+                to="home"
+                className={`nav-link active`}
+                // onClick={handleClick}
+                smooth={true}
+                duation={500}
+              >
+                Home
               </Link>
-              <Link to="about" smooth={true} duation={500}>
-                <Nav.Link href="#">About</Nav.Link>
+              <Link
+                to="about"
+                className={`nav-link `}
+                smooth={true}
+                // onClick={handleClick}
+                duation={500}
+              >
+                About
               </Link>
-              <Link to="resume" smooth={true} duation={500}>
-                <Nav.Link href="#">Resume</Nav.Link>
+              <Link
+                to="resume"
+                className={`nav-link  `}
+                smooth={true}
+                // onClick={handleClick}
+                duation={500}
+              >
+                Resume
               </Link>
-              <Link to="work" smooth={true} duation={500}>
-                <Nav.Link href="#">Work</Nav.Link>
+              <Link
+                to="work"
+                className={`nav-link `}
+                smooth={true}
+                // onClick={handleClick}
+                duation={500}
+              >
+                Work
               </Link>
-              <Link to="contact" smooth={true} duation={500}>
-                <Nav.Link href="#">Contact</Nav.Link>
+              <Link
+                to="contact"
+                className={`nav-link  `}
+                smooth={true}
+                // onClick={handleClick}
+                duation={500}
+              >
+                Contact
               </Link>
             </Nav>
           </Navbar.Collapse>
