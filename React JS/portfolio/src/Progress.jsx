@@ -3,7 +3,6 @@ import "./Progress.css";
 
 const Progress = ({ done }) => {
   const [style, setStyle] = useState({});
-  console.log(done);
   useEffect(() => {
     setTimeout(() => {
       const newStyle = {

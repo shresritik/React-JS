@@ -8,11 +8,22 @@ function Header() {
   return (
     <div id="home" className="header">
       <HeaderNav />
-      <div className="video_background">
+      {/* <div className="video_background">
         <div className="video_wrap">
-          <video id="video" autoPlay loop muted playsInline>
-            <source src={videos} type="video/mp4" />
-          </video>
+          <div id="video">
+            <video autoPlay loop muted playsInline>
+              <source src={videos} type="video/mp4" />
+            </video>
+          </div>
+        </div>
+      </div> */}
+      <div className="video-background">
+        <div className="video-wrap">
+          <div id="video">
+            <video autoPlay loop muted playsInline id="bdvid">
+              <source src={videos} type="video/mp4" />
+            </video>
+          </div>
         </div>
       </div>
       <div className="header_overlay">
@@ -29,7 +40,7 @@ function Header() {
             />
           </h4>
           <p>
-            I'm a Nepalese youngster who love to create websites and innovate
+            I'm a Nepalese individual who love to develop websites and innovate
             graphic designs.
           </p>
           <div className="icons">
