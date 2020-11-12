@@ -2,7 +2,7 @@ import React from "react";
 import "./Header.css";
 import HeaderNav from "./HeaderNav";
 import Typical from "react-typical";
-import videos from "./img/stars.mp4";
+import videos from "./img/stars2.mp4";
 
 function Header() {
   return (
