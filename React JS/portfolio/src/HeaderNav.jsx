@@ -14,6 +14,7 @@ function HeaderNav() {
     btns[i].addEventListener("click", function () {
       var current = document.getElementsByClassName("active");
       current[0].className = current[0].className.replace(" active", "");
+     
       this.className += " active";
     });
   }
@@ -88,8 +89,11 @@ function HeaderNav() {
             <Nav className="mr-auto">
               <Link
                 to="home"
-                className={`nav-link active`}
+                className={`nav-link`}
                 // onClick={handleClick}
+                offset={0}
+                spy={true}
+                activeClass='active'
                 smooth={true}
                 duation={500}
               >
@@ -99,6 +103,10 @@ function HeaderNav() {
                 to="about"
                 className={`nav-link `}
                 smooth={true}
+                spy={true}
+                offset={0}
+
+                activeClass='active'
                 // onClick={handleClick}
                 duation={500}
               >
@@ -108,6 +116,10 @@ function HeaderNav() {
                 to="resume"
                 className={`nav-link  `}
                 smooth={true}
+                offset={0}
+
+                spy={true}
+                activeClass='active'
                 // onClick={handleClick}
                 duation={500}
               >
@@ -117,6 +129,10 @@ function HeaderNav() {
                 to="work"
                 className={`nav-link `}
                 smooth={true}
+                offset={0}
+
+                spy={true}
+                activeClass='active'
                 // onClick={handleClick}
                 duation={500}
               >
@@ -126,6 +142,10 @@ function HeaderNav() {
                 to="contact"
                 className={`nav-link  `}
                 smooth={true}
+                offset={0}
+
+                spy={true}
+                activeClass='active'
                 // onClick={handleClick}
                 duation={500}
               >

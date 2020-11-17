@@ -172,6 +172,9 @@ a {
   color: rgb(54, 54, 54);
 }
 @media screen and (max-width: 500px) {
+  .navbar-dark:hover .navbar-nav:hover .nav-link:hover {
+    color: white;
+  }
   .header {
     min-height: fit-content;
   }

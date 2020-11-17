@@ -79,7 +79,7 @@ function Website() {
     <div className="work website">
       <div className="work_graphics website">
         <Link to="/">
-          <i class="fas fa-arrow-circle-left"></i>
+          <i className="fas fa-arrow-circle-left"></i>
         </Link>
         <div className="website_section">
           {prod.map?.((item) => (

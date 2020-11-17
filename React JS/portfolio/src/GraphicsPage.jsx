@@ -8,7 +8,7 @@ import untitled from "./img/graphic/rsz_1rsz_untitled-1_-_copy.jpg";
 import product from "./img/graphic/get_your_product_2.png";
 import bored from "./img/graphic/bored.png";
 import byol2 from "./img/graphic/byol2.jpeg";
-import byol from "./img/graphic/byol.jpeg";
+import byol from "./img/graphic/byol.png";
 import coke from "./img/graphic/Coca-cola.jpg";
 import Modals from "./Modals";
 import { Link } from "react-router-dom";
@@ -33,7 +33,7 @@ function GraphicsPage() {
     <div className="work website">
       <div className="work_graphics website">
         <Link to="/">
-          <i class="fas fa-arrow-circle-left"></i>
+          <i className="fas fa-arrow-circle-left"></i>
         </Link>
         <div className="website_section">
           {prod.map?.((item) => (
