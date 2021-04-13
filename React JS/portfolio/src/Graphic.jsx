@@ -31,7 +31,7 @@ function Graphic() {
     <div className="work" data-aos="fade-down">
       <div className="work_graphics">
         <div className="work_header">
-          <h4>Graphics Design</h4>
+          <h4>Graphic Designs</h4>
 
           <Link to="/graphics">Explore More</Link>
         </div>

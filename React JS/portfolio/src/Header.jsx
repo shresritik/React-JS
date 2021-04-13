@@ -36,11 +36,11 @@ function Header() {
             <Typical
               loop={Infinity}
               wrapper="b"
-              steps={["Web Developer.", 1000, "Graphics Designer.", 1000]}
+              steps={["Web Developer.", 1000, "Graphic Designer.", 1000]}
             />
           </h4>
           <p>
-            I'm a Nepalese individual who love to develop websites and innovate
+            I'm a Nepalese individual who loves to develop websites and innovate
             graphic designs.
           </p>
           <div className="icons">

@@ -28,10 +28,8 @@ function About() {
                 <h2>About Me</h2>
 
                 <p>
-                  In my free time, I like to watch movies, listen to music and
-                  play guitar. But whenever I am using Internet, I watch web
-                  development or graphic designs tutorials and inspirational
-                  portfolio which encourages me to develop one.
+                  In my free time, I like to watch movies, listen to music and also
+                  play guitar. But whenever I browse the Internet, I find web development or graphics design tutorials and inspirational portfolios which intrigues me, compelling me to create one.
                 </p>
                 <h2> Contact Details </h2>
                 <p>
