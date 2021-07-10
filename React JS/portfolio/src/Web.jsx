@@ -13,7 +13,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 function Web() {
   useEffect(() => {
-    Aos.init({ duration: 1000 });
+    Aos.init({ duration: 500 });
   }, []);
   const [modalShow, setModalShow] = React.useState(false);
   const [selectedImg, setSelectedImg] = React.useState(null);
@@ -26,48 +26,42 @@ function Web() {
       img: amazon,
       prodName: "Amazon Clone",
       link: "https://clone-21ec6.web.app/",
-      para:
-        "This is Amazon Clone made with React JS and hosted on Firebase. It uses cloud firestore as a database",
+      para: "This is Amazon Clone made with React JS and hosted on Firebase. It uses cloud firestore as a database",
     },
     {
       id: 2,
       img: netflix,
       prodName: "Netflix Clone",
       link: "https://netflix-clone-59bc5.web.app/",
-      para:
-        "This is Netflix Clone made with React JS and hosted on Firebase. The movies are taken from tmdb api",
+      para: "This is Netflix Clone made with React JS and hosted on Firebase. The movies are taken from tmdb api",
     },
     {
       id: 3,
       img: facebook,
       prodName: "Facebook Clone",
       link: "https://facebook-clone-4f848.web.app/",
-      para:
-        "This is Facebook Clone made with React JS and hosted on Firebase. It uses real-time database. So,the posts can be updated on real time. ",
+      para: "This is Facebook Clone made with React JS and hosted on Firebase. It uses real-time database. So,the posts can be updated on real time. ",
     },
     {
       id: 4,
       img: messenger,
       link: "https://messengerchatapp.herokuapp.com/",
       prodName: "Messaging App",
-      para:
-        "This is a messaging app made with React JS and hosted on Heroku. It has real time chatting feature.",
+      para: "This is a messaging app made with React JS and hosted on Heroku. It has real time chatting feature.",
     },
     {
       id: 5,
       img: whatsapp,
       prodName: "Whats App Clone",
       link: "https://whatsapp-clone-fa037.web.app/",
-      para:
-        "This is Whats App Clone made with React JS and and hosted on Firebase. It has real time chatting feature.",
+      para: "This is Whats App Clone made with React JS and and hosted on Firebase. It has real time chatting feature.",
     },
     {
       id: 6,
       img: instagram,
       prodName: "Instagram Clone",
       link: "https://instagram-clone-d352d.web.app/",
-      para:
-        "This is desktop mode Instagram Clone made with React JS and and hosted on Firebase. It uses real-time database. So,the posts can be updated on real time.",
+      para: "This is desktop mode Instagram Clone made with React JS and and hosted on Firebase. It uses real-time database. So,the posts can be updated on real time.",
     },
   ];
 

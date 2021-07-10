@@ -14,7 +14,7 @@ function HeaderNav() {
     btns[i].addEventListener("click", function () {
       var current = document.getElementsByClassName("active");
       current[0].className = current[0].className.replace(" active", "");
-     
+
       this.className += " active";
     });
   }
@@ -83,7 +83,12 @@ function HeaderNav() {
           show && `header_backgroundNone header_nav`
         }  ${view && `header_background header_nav`}`}
       >
-        <Navbar className={`nav_header mx-auto  `} variant="dark" expand="lg">
+        <Navbar
+          fixed="top"
+          className={`nav_header mx-auto  `}
+          variant="dark"
+          expand="lg"
+        >
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
@@ -93,7 +98,7 @@ function HeaderNav() {
                 // onClick={handleClick}
                 offset={0}
                 spy={true}
-                activeClass='active'
+                activeClass="active"
                 smooth={true}
                 duation={500}
               >
@@ -105,8 +110,7 @@ function HeaderNav() {
                 smooth={true}
                 spy={true}
                 offset={0}
-
-                activeClass='active'
+                activeClass="active"
                 // onClick={handleClick}
                 duation={500}
               >
@@ -117,9 +121,8 @@ function HeaderNav() {
                 className={`nav-link  `}
                 smooth={true}
                 offset={0}
-
                 spy={true}
-                activeClass='active'
+                activeClass="active"
                 // onClick={handleClick}
                 duation={500}
               >
@@ -130,9 +133,8 @@ function HeaderNav() {
                 className={`nav-link `}
                 smooth={true}
                 offset={0}
-
                 spy={true}
-                activeClass='active'
+                activeClass="active"
                 // onClick={handleClick}
                 duation={500}
               >
@@ -143,9 +145,8 @@ function HeaderNav() {
                 className={`nav-link  `}
                 smooth={true}
                 offset={0}
-
                 spy={true}
-                activeClass='active'
+                activeClass="active"
                 // onClick={handleClick}
                 duation={500}
               >

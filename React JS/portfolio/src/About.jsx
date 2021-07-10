@@ -4,7 +4,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import photo from "./img/ritik (1).jpg";
-import pdf from "./img/RITIK-CV.pdf";
+import pdf from "./img/CV,Ritik.pdf";
 
 function About() {
   useEffect(() => {
@@ -28,7 +28,7 @@ function About() {
                 <h2>About Me</h2>
 
                 <p>
-                  In my free time, I like to watch movies, listen to music and also
+                  In my leisure time, I like to watch movies, listen to music and also
                   play guitar. But whenever I browse the Internet, I find web development or graphics design tutorials and inspirational portfolios which intrigues me, compelling me to create one.
                 </p>
                 <h2> Contact Details </h2>

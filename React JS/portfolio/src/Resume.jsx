@@ -18,7 +18,7 @@ function Resume() {
         <h4>EDUCATION</h4>
         <div className="resume_right">
           <h4>Sagarmatha Engineering College (2020)</h4>
-          <p> Bachelors in Electronics, Communication & Inforamtion</p>
+          <p> Bachelors in Electronics, Communication & Information</p>
           <h4>Prasadi Academy Higher Secondary School (2016 - 2018)</h4>
           <p> 10+2 Science Faculty</p>
           <h4>Graded English Medium School (2006 - 2016)</h4>

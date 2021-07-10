@@ -3,6 +3,7 @@ import "./Header.css";
 import HeaderNav from "./HeaderNav";
 import Typical from "react-typical";
 import videos from "./img/stars2.mp4";
+import post from "./header-background.jpg";
 
 function Header() {
   return (
@@ -20,7 +21,15 @@ function Header() {
       <div className="video-background">
         <div className="video-wrap">
           <div id="video">
-            <video autoPlay loop muted playsInline id="bdvid">
+            <video
+              preload="auto"
+              poster={post}
+              autoPlay
+              loop
+              muted
+              playsInline
+              id="bdvid"
+            >
               <source src={videos} type="video/mp4" />
             </video>
           </div>

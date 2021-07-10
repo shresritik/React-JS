@@ -1,6 +1,6 @@
 body {
   font-family: "Calibri", "Franklin Gothic Medium", "Arial Narrow", Arial,
-    sans-serif;
+    sans-serif !important;
 }
 
 /* #home,
@@ -11,4 +11,27 @@ body {
 } */
 a {
   text-decoration: none;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(219, 219, 219);
+  border-radius: 20px;
+  border-color: #1a1a1a;
+  padding: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b9b9b9;
 }

@@ -10,8 +10,8 @@
     "aos": "^2.3.4",
     "bootstrap": "^4.5.3",
     "emailjs-com": "^2.6.3",
-    "firebase": "^8.0.2",
-    "firebase-tools": "^8.16.1",
+    "firebase": "^8.7.1",
+    "firebase-tools": "^8.20.0",
     "jquery": "^3.5.1",
     "react": "^17.0.1",
     "react-bootstrap": "^1.4.0",
@@ -37,14 +37,16 @@
   },
   "browserslist": {
     "production": [
-      ">0.2%",
+      ">0.3%",
+      "not ie 11",
       "not dead",
       "not op_mini all"
     ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
+  "development": [
+      ">0.3%",
+      "not ie 11",
+      "not dead",
+      "not op_mini all"
     ]
   }
 }

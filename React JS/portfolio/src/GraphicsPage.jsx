@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 import "./Website.css";
 // import "./Graphic.css";
 import cert from "./img/graphic/certificate of blood donation 2.jpg";
@@ -28,7 +28,9 @@ function GraphicsPage() {
     { id: 7, img: byol2, prodName: "Design Challenge 1" },
     { id: 9, img: coke, prodName: "Coke Banner Design" },
   ];
-
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <div className="work website">
       <div className="work_graphics website">

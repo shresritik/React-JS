@@ -25,7 +25,7 @@ function Graphic() {
     { id: 6, img: bored, prodName: "Leisure Time" },
   ];
   useEffect(() => {
-    Aos.init({ duration: 1000 });
+    Aos.init({ duration: 500 });
   }, []);
   return (
     <div className="work" data-aos="fade-down">

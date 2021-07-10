@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Website.css";
 import amazon from "./img/Web/amazon.JPG";
 import netflix from "./img/Web/netflix.JPG";
@@ -22,58 +22,54 @@ function Website() {
       img: amazon,
       prodName: "Amazon Clone",
       link: "https://clone-21ec6.web.app/",
-      para:
-        "This is Amazon Clone made with React JS and hosted on Firebase. It uses cloud firestore as a database",
+      para: "This is an Amazon clone made with React JS and hosted on Firebase. It uses cloud firestore as a database",
     },
     {
       id: 2,
       img: netflix,
       prodName: "Netflix Clone",
       link: "https://netflix-clone-59bc5.web.app/",
-      para:
-        "This is Netflix Clone made with React JS and hosted on Firebase. The movies are taken from tmdb api",
+      para: "This is a Netflix clone made with React JS and hosted on Firebase. The movies are taken from TMDB API",
     },
     {
       id: 3,
       img: facebook,
       prodName: "Facebook Clone",
       link: "https://facebook-clone-4f848.web.app/",
-      para:
-        "This is Facebook Clone made with React JS and hosted on Firebase. It uses real-time database. So,the posts can be updated on real time. ",
+      para: "This is a Facebook clone made with React JS and hosted on Firebase. It uses real-time database. So, the posts can be updated on real time. ",
     },
     {
       id: 4,
       img: messenger,
       link: "https://messengerchatapp.herokuapp.com/",
       prodName: "Messaging App",
-      para:
-        "This is a messaging app made with React JS and hosted on Heroku. It has real time chatting feature.",
+      para: "This is a messaging app made with React JS and hosted on Heroku. It has real time chatting feature.",
     },
     {
       id: 5,
       img: whatsapp,
       prodName: "Whats App Clone",
       link: "https://whatsapp-clone-fa037.web.app/",
-      para:
-        "This is Whats App Clone made with React JS and and hosted on Firebase. It has real time chatting feature.",
+      para: "This is a WhatsApp clone made with React JS and hosted on Firebase. It has real time chatting feature.",
     },
     {
       id: 6,
       img: instagram,
       prodName: "Instagram Clone",
       link: "https://instagram-clone-d352d.web.app/",
-      para:
-        "This is desktop mode Instagram Clone made with React JS and and hosted on Firebase. It uses real-time database. So,the posts can be updated on real time.",
+      para: "This is a desktop mode Instagram clone made with React JS and hosted on Firebase. It uses real-time database. So,the posts can be updated on real time.",
     },
     {
       id: 7,
       img: notes,
       prodName: "Notes Taker",
       link: "https://shresritik.github.io/JS-practice/Notes%20Taker/",
-      para:
-        "This is a Note Taker website where you can take your personal notes. This is made using HTML, CSS and JS",
+      para: "This is a note taker website where you can take your personal notes. This is made using HTML, CSS and JS",
     },
   ];
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div className="work website">

@@ -207,11 +207,18 @@ a {
   }
 }
 @media screen and (max-width: 991px) {
+  .navbar-toggler:focus,
+  .navbar-toggler:hover {
+    /* text-decoration: none; */
+    outline: none;
+  }
   .navbar {
     background-color: #1a1a1a;
     opacity: 0.8;
     border-radius: 10px;
     padding: 0px !important;
+    justify-content: center !important;
+    top: 10px !important;
   }
   #video {
     width: fit-content;
