@@ -28,4 +28,6 @@ urlpatterns = [
     path('api/orders/', include('base.urls.order_urls')),
 
 ]
+# creating url for the static images and placing in the static_root:in production static files are taken from staticfiles
+urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
