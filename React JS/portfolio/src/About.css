@@ -52,9 +52,7 @@ a:hover {
 .about_resume > a > button:hover {
   background-color: white;
   color: #444444;
-  border: none;
 
-  outline: none;
 }
 p {
   color: rgb(197, 197, 197);

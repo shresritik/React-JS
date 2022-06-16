@@ -1,4 +1,4 @@
-import React,{useEffect} from "react";
+import React, { useEffect } from "react";
 import "./Website.css";
 // import "./Graphic.css";
 import cert from "./img/graphic/certificate of blood donation 2.jpg";
@@ -11,12 +11,13 @@ import byol2 from "./img/graphic/byol2.jpeg";
 import byol from "./img/graphic/byol.png";
 import coke from "./img/graphic/Coca-cola.jpg";
 import Modals from "./Modals";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 
 function GraphicsPage() {
   const [modalShow, setModalShow] = React.useState(false);
   const [selectedImg, setSelectedImg] = React.useState(null);
   const [selectedProd, setSelectedProd] = React.useState(null);
+  const location = useHistory();
   const prod = [
     { id: 1, img: daily, prodName: "Daily Essentials" },
     { id: 2, img: cert, prodName: "Certificate of Blood Donation" },
@@ -29,12 +30,12 @@ function GraphicsPage() {
     { id: 9, img: coke, prodName: "Coke Banner Design" },
   ];
   useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="work website">
       <div className="work_graphics website">
-        <Link to="/">
+        <Link to="#" onClick={location.goBack}>
           <i className="fas fa-arrow-circle-left"></i>
         </Link>
         <div className="website_section">

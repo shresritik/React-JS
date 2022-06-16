@@ -20,6 +20,7 @@
     "react-router-hash-link": "^2.2.2",
     "react-scripts": "4.0.0",
     "react-scroll": "^1.8.1",
+    "react-snap": "^1.23.0",
     "react-typical": "^0.1.3",
     "web-vitals": "^0.2.4"
   },
@@ -27,7 +28,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "postbuild": "react-snap"
   },
   "eslintConfig": {
     "extends": [
@@ -42,7 +44,7 @@
       "not dead",
       "not op_mini all"
     ],
-  "development": [
+    "development": [
       ">0.3%",
       "not ie 11",
       "not dead",

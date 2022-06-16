@@ -7,7 +7,6 @@ import { Link } from "react-scroll";
 function HeaderNav() {
   const [show, handleShow] = useState(false);
   const [view, handleView] = useState(false);
-
   var btns = document.getElementsByClassName("nav-link");
 
   for (var i = 0; i < btns.length; i++) {
@@ -20,7 +19,7 @@ function HeaderNav() {
   }
 
   window.addEventListener("scroll", () => {
-    if (window.scrollY === 0 || window.scrollY <= 50) {
+    if (window?.scrollY === 0 || window?.scrollY <= 50) {
       if (document.querySelector(".header_nav")) {
         document.querySelector(".header_nav").style.backgroundColor =
           "transparent";
@@ -34,7 +33,7 @@ function HeaderNav() {
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      if (window.scrollY > 50 && window.scrollY < 699) {
+      if (window?.scrollY > 50 && window?.scrollY < 699) {
         handleShow(true);
       } else {
         if (document.querySelector(".header_nav")) {
@@ -46,7 +45,7 @@ function HeaderNav() {
     });
     return () => {
       window.removeEventListener("scroll", () => {
-        if (window.scrollY > 50 && window.scrollY < 699) {
+        if (window?.scrollY > 50 && window?.scrollY < 699) {
           handleShow(true);
         } else {
           if (document.querySelector(".header_nav")) {
@@ -60,13 +59,13 @@ function HeaderNav() {
   }, []);
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      if (window.scrollY > 700) {
+      if (window?.scrollY > 700) {
         handleView(true);
       } else handleView(false);
     });
     return () => {
       window.removeEventListener("scroll", () => {
-        if (window.scrollY > 700) {
+        if (window?.scrollY > 700) {
           handleView(true);
         } else handleView(false);
       });

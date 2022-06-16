@@ -48,7 +48,7 @@ function Footer() {
         </a>
       </div>
       <h6>Developed by Ritik Krishna Shrestha</h6>
-      <h6> Copyright &copy; 2021</h6>
+      <h6> Copyright &copy; 2022</h6>
     </div>
   );
 }

@@ -40,3 +40,15 @@ a:hover {
 button > h6 {
   margin-bottom: 0;
 }
+.modal-open .modal{
+  overflow-y: hidden;
+}
+.far:hover {
+  cursor: pointer;
+  color: grey;
+  /* background-color: white; */
+}
+button.close{
+  outline: none;
+  border:none;
+}

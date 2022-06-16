@@ -8,7 +8,7 @@ import whatsapp from "./img/Web/whatsapp.JPG";
 import instagram from "./img/Web/instagram.JPG";
 import notes from "./img/Web/notes_taker.JPG";
 import Modals from "./Modals";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 
 function Website() {
   const [modalShow, setModalShow] = React.useState(false);
@@ -16,6 +16,8 @@ function Website() {
   const [selectedProd, setSelectedProd] = React.useState(null);
   const [selectedPara, setSelectedPara] = React.useState(null);
   const [selectedlink, setSelectedlink] = React.useState(null);
+  const location = useHistory();
+
   const prod = [
     {
       id: 1,
@@ -70,11 +72,10 @@ function Website() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
   return (
     <div className="work website">
       <div className="work_graphics website">
-        <Link to="/">
+        <Link to="#" onClick={location.goBack}>
           <i className="fas fa-arrow-circle-left"></i>
         </Link>
         <div className="website_section">
