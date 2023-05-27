@@ -11,6 +11,8 @@ import "@fortawesome/fontawesome-free/css/all.css";
 import Website from "./Website";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import GraphicsPage from "./GraphicsPage";
+import Login from "./Admin/Login";
+import Admin from "./Admin/Admin";
 
 function App() {
   return (
@@ -21,6 +23,12 @@ function App() {
         </Route>
         <Route path="/graphics">
           <GraphicsPage />
+        </Route>
+        <Route path="/admin/user">
+          <Admin />
+        </Route>
+        <Route exact path="/admin">
+          <Login />
         </Route>
         <Switch>
           <Route exact path="/">

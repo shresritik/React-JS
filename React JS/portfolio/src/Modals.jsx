@@ -44,20 +44,36 @@ function Modals(props) {
           }
         />
       </Modal.Body>
-      {props?.link && (
+      {/* {console.log(props)} */}
+      {(props?.link || props?.git) && (
         <Modal.Footer>
           {props?.para && <h5>{props?.para}</h5>}
-          {props?.link && (
+          {(props?.link || props?.git) && (
             <button className="btn-modal-close" onClick={props.onHide}>
               Close
             </button>
           )}
-          <a href={props?.link} rel="noreferrer" target="_blank">
-            <button>
-              {" "}
-              <h6>Visit Website </h6>
-            </button>
-          </a>{" "}
+          <div>
+            {props?.git && (
+              <a
+                href={props?.git}
+                className="mr-2"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <button>
+                  <h6>Visit Github </h6>
+                </button>
+              </a>
+            )}
+            {props?.link && (
+              <a href={props?.link} rel="noreferrer" target="_blank">
+                <button>
+                  <h6>Visit Website </h6>
+                </button>
+              </a>
+            )}
+          </div>
         </Modal.Footer>
       )}
     </Modal>

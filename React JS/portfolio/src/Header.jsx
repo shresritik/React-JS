@@ -49,8 +49,8 @@ function Header() {
             />
           </h4>
           <p>
-            I'm a Nepalese individual who loves to develop websites and innovate
-            graphic designs.
+            I'm a passionate developer from Nepal who can create awesome
+            websites and innovative graphic designs.
           </p>
           <div className="icons">
             <a

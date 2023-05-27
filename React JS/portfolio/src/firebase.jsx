@@ -1,5 +1,4 @@
 import firebase from "firebase";
-
 const firebaseConfig = {
   apiKey: "AIzaSyByk54usIze1AygpEPoWt3Mr3GB9RSx858",
   authDomain: "shresritik.firebaseapp.com",
@@ -11,4 +10,5 @@ const firebaseConfig = {
 };
 const firebaseApp = firebase.initializeApp(firebaseConfig);
 const db = firebaseApp.firestore();
+export const storage = firebase.storage();
 export default db;
