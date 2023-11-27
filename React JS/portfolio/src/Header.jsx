@@ -78,7 +78,7 @@ function Header() {
               <i className="fab fa-github"></i>
             </a>
             <a
-              href="https://www.linkedin.com/in/ritik-shrestha-b17a4616a/"
+              href="https://www.linkedin.com/in/ritik-shrestha-35043627b/"
               rel="noreferrer"
               target="_blank"
             >
