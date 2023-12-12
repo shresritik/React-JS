@@ -15,8 +15,12 @@ a > button {
   color: white;
   outline: none !important;
   padding: 10px;
-  border-radius: 2px;
-  border-color: transparent;
+  border-radius: 5px;
+  border-color: #1a1a1a;
+}
+.btn-modal-close {
+  border-radius: 5px;
+  border-color: #1a1a1a;
 }
 a > button:hover {
   background-color: white;
@@ -40,7 +44,7 @@ a:hover {
 button > h6 {
   margin-bottom: 0;
 }
-.modal-open .modal{
+.modal-open .modal {
   overflow-y: hidden;
 }
 .far:hover {
@@ -48,7 +52,12 @@ button > h6 {
   color: grey;
   /* background-color: white; */
 }
-button.close{
+button.close {
   outline: none;
-  border:none;
+  border: none;
+}
+#btn-close {
+  border: none !important;
+  padding: 0;
+  background-color: initial !important;
 }

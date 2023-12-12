@@ -43,7 +43,7 @@ function Graphic() {
   }, []);
   return (
     <div className="work" data-aos="fade-down">
-      <div className="work_graphics">
+      <div className="work_graphics" id="work_graphics">
         <div className="work_header">
           <h4>Graphic Designs</h4>
 

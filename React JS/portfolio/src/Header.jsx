@@ -2,8 +2,8 @@ import React from "react";
 import "./Header.css";
 import HeaderNav from "./HeaderNav";
 import Typical from "react-typical";
-import videos from "./img/stars2.mp4";
-import post from "./header-background.jpg";
+// import videos from "./img/stars2.mp4";
+// import post from "./header-background.jpg";
 
 function Header() {
   return (
@@ -23,14 +23,19 @@ function Header() {
           <div id="video">
             <video
               preload="auto"
-              poster={post}
+              poster={
+                "https://res.cloudinary.com/dzni0ie3s/image/upload/v1702387659/header-background_yneima.jpg"
+              }
               autoPlay
               loop
               muted
               playsInline
               id="bdvid"
             >
-              <source src={videos} type="video/mp4" />
+              <source
+                src="https://res.cloudinary.com/dzni0ie3s/video/upload/v1702387367/stars2_hbtqp6.mp4"
+                type="video/mp4"
+              />
             </video>
           </div>
         </div>

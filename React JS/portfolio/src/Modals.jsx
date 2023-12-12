@@ -1,6 +1,6 @@
 import React from "react";
 import { Modal } from "react-bootstrap";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import "./Modals.css";
 
 function Modals(props) {
@@ -22,9 +22,13 @@ function Modals(props) {
       <Modal.Body>
         {!props?.link ? (
           <>
-            <Link to="#" className="position-absolute" onClick={props.onHide}>
+            <button
+              id="btn-close"
+              className="position-absolute "
+              onClick={props.onHide}
+            >
               <i className="far fa-times-circle fa-2x"></i>
-            </Link>
+            </button>
           </>
         ) : (
           "Hello"

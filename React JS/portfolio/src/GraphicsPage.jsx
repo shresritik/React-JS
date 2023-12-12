@@ -49,7 +49,7 @@ function GraphicsPage() {
   return (
     <div className="work website">
       <div className="work_graphics website">
-        <Link to="#" onClick={location.goBack}>
+        <Link to="/" onClick={location.goBack}>
           <i className="fas fa-arrow-circle-left"></i>
         </Link>
         <div className="website_section">
